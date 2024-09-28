@@ -1,0 +1,178 @@
+/* Reseta estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que o HTML e o body ocupem 100% da altura da tela */
+}
+
+body {
+    background: url('cavalo.png') no-repeat center;
+    background-size: cover; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em colunas */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+}
+
+.container {
+    flex: 1; /* Garante que o conteúdo principal ocupe o espaço necessário */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed; /* Mantém o header fixo no topo */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Para garantir que o header fique acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ddd;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px; /* Ajuste para dar espaço ao header fixo */
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#hero .btn {
+    padding: 12px 36px;
+    background-color: #fff;
+    color: #28a745;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#hero .btn:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+/* Seções */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Ajuste a margem conforme necessário */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor escura com 60% de opacidade */
+}
+
+.features {
+    list-style: none;
+}
+
+.features li {
+    margin-bottom: 15px;
+}
+
+/* Equipe */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    flex-basis: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+/* Formulário */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form button {
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #28a745;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+    position: relative; /* Pode ser ajustado conforme necessário */
+    z-index: 100; /* Para garantir que ele fique acima de outros elementos */
+}
