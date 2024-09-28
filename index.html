@@ -1,38 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RastroGado - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Icone.png" type="image/png">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>RastroGado</h1>
-            <nav>
-                <a href="sobre.html">Sobre</a>
-                <a href="funcionalidades.html">Funcionalidades</a>
-                <a href="equipe.html">Equipe</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RastroGado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="icon/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#home">Rastro<span class="logo-color">Gado</span></a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
         </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
     </header>
-
-    <section id="hero">
-        <div class="container">
-            <h2>Monitore seu rebanho com facilidade e precisão</h2>
-            <p>Um aplicativo inovador que garante a saúde e localização do seu gado em tempo real!</p>
-            <a href="contato.html" class="btn">Saiba Mais</a>
+    <main>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img src="Fazenda.jpg" alt="Imagem de gado" />
+          </div>
+          <div class="text">
+            <h1 class="title">Monitore seu gado com facilidade</h1>
+            <p>Garanta a saúde e segurança do seu rebanho com <span class="color-word-green">RastroGado</span></p>
+            <a class="button" href="#">Entre em Contato</a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 RastroGado. Todos os direitos reservados.</p>
+      <div class="divider-1"></div>
+
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img src="BPM.png" alt="Imagem sobre nós" />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              O RastroGado é um aplicativo inovador destinado a fazendeiros que buscam uma solução acessível e eficaz para o monitoramento de gado.
+            </p>
+            <br />
+            <p>
+              Com foco em usabilidade, especialmente para idosos, nosso aplicativo oferece funcionalidades como monitoramento de BPM, posicionamento geográfico por GPS e categorização de gado por sexo.
+            </p>
+            <br />
+            <p>
+              Estamos comprometidos em proporcionar uma experiência intuitiva e rica em recursos que auxiliem na gestão do seu rebanho.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p class="subtitle">
+              O RastroGado oferece uma gama de serviços para otimizar o cuidado com seu gado.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <div >
+              <h3 class="title">Monitoramento de BPM</h3>
+              <p>
+                Acompanhe a saúde do seu gado com monitoramento de batimentos cardíacos em tempo real.
+              </p>
+              </div>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Posicionamento GPS</h3>
+              <p>
+                Localize seu gado em tempo real e evite perdas.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-mail"></i>
+              <h3 class="title">Relatórios de Saúde</h3>
+              <p>
+                Receba relatórios detalhados sobre a saúde do seu rebanho.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato conosco</h2>
+            <p>
+              Para mais informações sobre nossos serviços ou para qualquer dúvida, não hesite em nos contatar.
+            </p>
+            <a href="https://forms.gle/o77hsSG6ibkjbWiW9" target="blank" class="button"><i class="icon-whatsapp"></i>Suporte</a>
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i>telefone para contato: <br>(61) 99208-9515</li>
+              <li><i class="icon-mail"></i>Email para contato: <br>rastrogadocontato@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+    </main>
+    <footer class="section">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Rastro<span class="logo-color">Gado</span></a>
+          <p>2024 RastroGado.</p>
+          <p>Todos os direitos reservados</p>
         </div>
     </footer>
-</body>
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
