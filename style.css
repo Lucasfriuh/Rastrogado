@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
-    background: url('cavalo.png') no-repeat center;
+    background: url('fundo.png') no-repeat center;
     background-size: cover; 
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Mudei para Roboto para um visual mais moderno */
     line-height: 1.6;
     color: #ffffff;
     display: flex;
@@ -22,11 +22,12 @@ body {
 
 .container {
     flex: 1; /* Garante que o conteúdo principal ocupe o espaço necessário */
+    padding: 0 20px;
 }
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #28a745, #218838);
+    background: rgba(17, 100, 37, 0.9); /* Usei uma cor de fundo com transparência */
     color: #fff;
     padding: 20px 0;
     position: fixed; /* Mantém o header fixo no topo */
@@ -63,6 +64,7 @@ header nav a:hover {
     align-items: center;
     text-align: center;
     margin-top: 80px; /* Ajuste para dar espaço ao header fixo */
+    background-color: rgba(0, 0, 0, 0.5); /* Adicionei um fundo escuro para melhorar a legibilidade */
 }
 
 #hero h2 {
@@ -168,11 +170,24 @@ header nav a:hover {
 
 /* Footer */
 footer {
-    background: #28a745;
+    background: rgba(40, 167, 69, 0.9);
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
     margin-top: auto; /* Garante que o rodapé fique no final da página */
-    position: relative; /* Pode ser ajustado conforme necessário */
-    z-index: 100; /* Para garantir que ele fique acima de outros elementos */
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ddd;
 }

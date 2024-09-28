@@ -22,15 +22,17 @@
 
     <section class="section">
         <div class="container">
-            <h2>Contato</h2>
-            <p>Estamos aqui para ajudar! Se você tiver alguma dúvida ou precisar de mais informações sobre o RastroGado, preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
-            <form id="contact-form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+            <h2>Entre em Contato</h2>
+            <form id="contact-form"> <!-- Adicionado o ID ao formulário -->
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                
                 <button type="submit" class="btn">Enviar</button>
             </form>
         </div>
@@ -43,11 +45,12 @@
     </footer>
 
     <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Obrigado! Sua mensagem foi enviada com sucesso.');
-        this.reset(); // Limpa o formulário
-    });
+        // Adiciona o evento de 'submit' ao formulário
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Impede o envio do formulário
+            alert('Obrigado! Sua mensagem foi enviada com sucesso.');
+            this.reset(); // Limpa o formulário
+        });
     </script>
 </body>
 </html>
