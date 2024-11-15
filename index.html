@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RastroGado</title>
+    <title>RastroGado - Monitoramento de Rebanho com Facilidade</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,15 +27,15 @@
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
+        <button class="toggle icon-menu" aria-label="Abrir menu"></button>
+        <button class="toggle icon-close" aria-label="Fechar menu"></button>
       </nav>
     </header>
     <main>
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
-            <img src="Fazenda.jpg" alt="Imagem de gado" />
+            <img src="Fazenda.jpg" alt="Imagem de gado em uma fazenda" />
           </div>
           <div class="text">
             <h1 class="title">Monitore seu gado com facilidade</h1>
@@ -45,31 +45,31 @@
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="divider"></div>
 
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
-            <img src="BPM.png" alt="Imagem sobre nós" />
+            <img src="BPM.jpg" alt="Monitoramento de batimentos cardíacos de um animal" />
           </div>
           <div class="text">
             <h2 class="title">Sobre nós</h2>
             <p>
-              O RastroGado é um aplicativo inovador destinado a fazendeiros que buscam uma solução acessível e eficaz para o monitoramento de gado.
+              O RastroGado é um aplicativo revolucionário, projetado para atender as necessidades de fazendeiros que buscam uma solução prática e acessível para o monitoramento eficiente de seu rebanho.
             </p>
             <br />
             <p>
-              Com foco em usabilidade, especialmente para idosos, nosso aplicativo oferece funcionalidades como monitoramento de BPM, posicionamento geográfico por GPS e categorização de gado por sexo.
+              Com uma interface simples e de fácil utilização, especialmente adaptada para idosos, o RastroGado oferece uma série de funcionalidades avançadas, incluindo o monitoramento em tempo real dos batimentos cardíacos (BPM) dos animais, localização precisa por GPS e a categorização do gado por sexo, facilitando a organização e o acompanhamento de cada animal.
             </p>
             <br />
             <p>
-              Estamos comprometidos em proporcionar uma experiência intuitiva e rica em recursos que auxiliem na gestão do seu rebanho.
+              Nosso compromisso é garantir que você tenha à disposição uma ferramenta poderosa e intuitiva, capaz de transformar a gestão do seu rebanho em uma tarefa mais eficiente, com todas as informações que você precisa na palma da sua mão.
             </p>
           </div>
         </div>
       </section>
 
-      <div class="divider-2"></div>
+      <div class="divider"></div>
 
       <section class="section" id="services">
         <div class="container grid">
@@ -82,12 +82,10 @@
           <div class="cards grid">
             <div class="card">
               <i class="icon-cosmetic"></i>
-              <div >
               <h3 class="title">Monitoramento de BPM</h3>
               <p>
                 Acompanhe a saúde do seu gado com monitoramento de batimentos cardíacos em tempo real.
               </p>
-              </div>
             </div>
             <div class="card">
               <i class="icon-trim"></i>
@@ -107,7 +105,7 @@
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="divider"></div>
 
       <section class="section" id="contact">
         <div class="container grid">
@@ -116,27 +114,28 @@
             <p>
               Para mais informações sobre nossos serviços ou para qualquer dúvida, não hesite em nos contatar.
             </p>
-            <a href="https://forms.gle/Xc23NeHnZTQZDdiq7" target="blank" class="button"><i class="icon-whatsapp"></i>Suporte</a>
+            <a href="https://forms.gle/Xc23NeHnZTQZDdiq7" target="_blank" class="button" aria-label="Suporte via WhatsApp">
+              <i class="icon-whatsapp"></i>Suporte
+            </a>
           </div>
           <div class="links">
             <ul class="grid">
-              <li><i class="icon-phone"></i>telefone para contato: <br>(61) 99208-9515</li>
+              <li><i class="icon-phone"></i>Telefone para contato: <br>(61) 99208-9515</li>
               <li><i class="icon-mail"></i>Email para contato: <br>rastrogadocontato@gmail.com</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <div class="divider-2"></div>
+      <div class="divider"></div>
     </main>
     <footer class="section">
-        <div class="brand">
-          <a class="logo logo-alt" href="#home">Rastro<span class="logo-color">Gado</span></a>
-          <p>2024 RastroGado.</p>
-          <p>Todos os direitos reservados</p>
-        </div>
+      <div class="brand">
+        <a class="logo logo-alt" href="#home">Rastro<span class="logo-color">Gado</span></a>
+        <p>2024 RastroGado. Todos os direitos reservados</p>
+      </div>
     </footer>
-    <a href="#home" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <a href="#home" class="back-to-top" aria-label="Voltar ao topo"><i class="icon-arrow-up-circle"></i></a>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </body>
