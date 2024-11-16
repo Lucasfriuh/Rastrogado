@@ -1,142 +1,581 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RastroGado - Monitoramento de Rebanho com Facilidade</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" href="assets/img/Icone.png" type="image/png">
-  </head>
-  <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="#home">Rastro<span class="logo-color">Gado</span></a>
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Rastrogado</title>
+  <meta name="title" content="Rastrogado">
+  <meta name="description" content="This is a business agency html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/img/Icone.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload img
+  -->
+  <link rel="preload" as="image" href="./assets/img/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/img/slide1.png">
+  <link rel="preload" as="image" href="./assets/img/slide2.jpg">
+  <link rel="preload" as="image" href="./assets/img/slide3.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/imgimg/Titulo.png" width="200" height="200" alt="Rastrogado home" class="logo-light">      </a>
+        <img src="./assets/imgimg/Titulo.png" width="200" height="200" alt="Rastrogado home" class="logo-dark">      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/img/Titulo.png" width="200" height="200" alt="Rastrogado home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
         </div>
-        <button class="toggle icon-menu" aria-label="Abrir menu"></button>
-        <button class="toggle icon-close" aria-label="Fechar menu"></button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#Sobre" class="navbar-link">Sobre</a>
+          </li>
+
+          <li>
+            <a href="#Serviços" class="navbar-link">Serviços</a>
+          </li>
+
+          <li>
+            <a href="#Teste" class="navbar-link">Metas</a>
+          </li>
+
+          <li>
+            <a href="#Contato" class="navbar-link">Contato</a>
+          </li>
+          
+        </ul>
+
+        <div class="wrapper">
+          <a href="rastrogadocontato@gmail.com" class="contact-link">rastrogadocontato@gmail.com</a>
+
+          <a href="tel:61992089515" class="contact-link">(+55) (61) 99208-9515</a>
+        </div>
       </nav>
-    </header>
-    <main>
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img src="assets/img/Fazenda.jpg" alt="Imagem de gado em uma fazenda" />
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/img/vacas.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Soluções Inteligentes para<br> Gestão de Gado e Pastoreio.</h1>
+
+          </div>  
           </div>
-          <div class="text">
-            <h1 class="title">Monitore seu gado com facilidade</h1>
-            <p>Garanta a saúde e segurança do seu rebanho com <span class="color-word-green">RastroGado</span></p>
-            <a class="button" href="#contact">Entre em Contato</a>
-          </div>
+            <p class="hero-text">
+              Na RastroGado, integramos tecnologia de ponta <br>para oferecer rastreamento, monitoramento <br>e gestão eficiente do seu rebanho.<br> Simplifique seu dia a dia no campo com<br> dados precisos e controle total, direto<br> na palma da sua mão.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="https://forms.gle/Xc23NeHnZTQZDdiq7" target="_blank" class="btn btn-primary">Entre em contato</a>
+
+            </div>    
+      </section>
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
+          <a name="Serviços"></a>
+          <p class="ousado">Serviços</p>
+
+          <h2 class="h2 section-title">
+            O RastroGado é um aplicativo inovador destinado a fazendeiros que buscam uma solução acessível e eficaz para o monitoramento de gado.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/img/icons8-monitor-cardiaco-50.png" aria-hidden="true"></icon>
+                </div>
+
+                <h3 class="h4 card-title">Monitoramento de BPM</h3>
+
+                <p class="card-text">
+                  Acompanhe a saúde do seu gado em tempo real. 
+                  <br>
+                  
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="assets/img/icons8-gps-50.png">
+                </div>
+
+                <h3 class="h4 card-title">Posicionamento GPS</h3>
+
+                <p class="card-text">
+                  Localize seu gado em tempo real e evite perdas.
+                  <br>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                <img src="assets/img/icons8-maleta-de-medico-50.png">
+                </div>
+
+                <h3 class="h4 card-title">Relatórios de Saúde</h3>
+
+                <p class="card-text">
+                  Receba relatórios detalhados sobre a saúde do seu rebanho.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="assets/img/grafico.png">
+                </div>
+
+                <h3 class="h4 card-title">Análise de Dados </h3>
+
+                <p class="card-text">
+                  Informações fragmentadas dificultam a tomada de decisões.
+                </p>
+              </div>
+            </li>
         </div>
       </section>
 
-      <div class="divider"></div>
+      <!-- 
+        - #ABOUT
+      -->
 
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
-            <img src="assets/img/BPM.jpg" alt="Imagem sobre nós" />
-          </div>
-          <div class="text">
-            <h2 class="title">Sobre nós</h2>
-            <p>
-              O RastroGado é um aplicativo inovador destinado a fazendeiros que buscam uma solução acessível e eficaz para o monitoramento de gado.
-            </p>
-            <br />
-            <p>
-              Com foco em usabilidade, especialmente para idosos, nosso aplicativo oferece funcionalidades como monitoramento de BPM, posicionamento geográfico por GPS e categorização de gado por sexo.
-            </p>
-            <br />
-            <p>
-              Estamos comprometidos em proporcionar uma experiência intuitiva e rica em recursos que auxiliem na gestão do seu rebanho.
-            </p>
-          </div>
-        </div>
-      </section>
+      <section class="about" aria-labelledby="about-label">
+        <a name="Sobre"></a>
+        <div class="container">
+          <figure class="about-banner">
+            <img src="./assets/img/slide1.png" width="800" height="400" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
 
-      <div class="divider"></div>
+          <div class="about-content">
 
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Serviços</h2>
-            <p class="subtitle">
-              O RastroGado oferece uma gama de serviços para otimizar o cuidado com seu gado.
-            </p>
-          </header>
-          <div class="cards grid">
-            <div class="card">
-              <i class="icon-cosmetic"></i>
-              <h3 class="title">Monitoramento de BPM</h3>
-              <p>
-                Acompanhe a saúde do seu gado com monitoramento de batimentos cardíacos em tempo real.
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon-trim"></i>
-              <h3 class="title">Posicionamento GPS</h3>
-              <p>
-                Localize seu gado em tempo real e evite perdas.
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon-mail"></i>
-              <h3 class="title">Relatórios de Saúde</h3>
-              <p>
-                Receba relatórios detalhados sobre a saúde do seu rebanho.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <p class="section-subtitle" id="about-label">Por que nós escolher?</p>
 
-      <div class="divider"></div>
+            <h2 class="h2 section-title">
+            Oferecemos ferramentas inteligentes para monitorar a saúde, localização e produtividade do rebanho, ajudando produtores a maximizar lucros e garantir o bem-estar animal.
 
-      <section class="section" id="contact">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="title">Entre em contato conosco</h2>
-            <p>
-              Para mais informações sobre nossos serviços ou para qualquer dúvida, não hesite em nos contatar.
-            </p>
-            <a href="https://forms.gle/Xc23NeHnZTQZDdiq7" target="_blank" class="button" aria-label="Suporte via WhatsApp">
-              <i class="icon-whatsapp"></i>Suporte
-            </a>
-          </div>
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i>Telefone para contato: <br>(61) 99208-9515</li>
-              <li><i class="icon-mail"></i>Email para contato: <br>rastrogadocontato@gmail.com</li>
+
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Otimização do Tempo</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Concentre-se no que realmente importa enquanto nós cuidamos do rastreamento e das análises.
+
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Aumento da Produtividade</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Identifique áreas de melhoria com relatórios completos.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Acesso Facilitado</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Controle tudo diretamente pelo celular ou computador.
+                  </p>
+
+                </div>
+              </li>
+
             </ul>
+
           </div>
+
         </div>
       </section>
 
-      <div class="divider"></div>
-    </main>
-    <footer class="section">
-      <div class="brand">
-        <a class="logo logo-alt" href="#home">Rastro<span class="logo-color">Gado</span></a>
-        <p>2024 RastroGado. Todos os direitos reservados</p>
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/img/analise.jpg" width="800" height="400" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Como a RastroGado Resolve Problemas?</p>
+
+            <h2 class="h2 section-title">
+              Estamos comprometidos em proporcionar uma experiência intuitiva e rica em recursos que auxiliem na gestão do seu rebanho.
+            </h2>
+
+          <h
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Monitoramento da Qualidade do Pasto.
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Localização e Controle do Rebanho.
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Gestão da Rotação de Pastagens.
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Prevenção de Doenças e Bem-Estar Animal.
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label">
+        <a name="Teste"></a>
+        <p class="projeto"> </p>
+        <p class="projetos">Projetos e metas</p>
+
+          <h2 class="Metas">
+            Na RastroGado, estamos comprometidos em transformar a gestão pecuária com soluções inovadoras que impulsionam resultados.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/img/blog-1.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a class="card-title">Integração com Tecnologias de Inteligência Artificial (IA)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Desenvolver algoritmos avançados de IA que identifiquem padrões no comportamento do rebanho e ofereçam previsões sobre produtividade e saúde.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/img/clima.png" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a class="card-title">Plataforma de Análise Climática Avançada</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Lançar um módulo que combine dados meteorológicos, históricos da propriedade e sensoriamento remoto para prever variações climáticas com impacto direto no pasto.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/img/slide1.png" width="560" height="350" loading="lazy" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a class="card-title">Expansão da Conectividade no Campo</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Estabelecer parcerias com provedores de internet rural para garantir que todas as funções do app possam ser utilizadas mesmo em áreas remotas.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+     
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/img/Icone.png" width="74" height="24" alt="Rastrogado home">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2024 RastroGado. <br> Todos os direitos reservados.
+        </p>
+
       </div>
-    </footer>
-    <a href="#home" class="back-to-top" aria-label="Voltar ao topo"><i class="icon-arrow-up-circle"></i></a>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Entre em Contato</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Recanto das Emas, Brasília, DF
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">rastrogadocontato@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">(61) 99208-9515</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Veja mais</p>
+        </li>
+
+        <li>
+          <a href="#Sobre" class="footer-link">Sobre</a>
+        </li>
+
+        <li>
+          <a href="#Serviços" class="footer-link">Serviços</a>
+        </li>
+
+        <li>
+          <a href="#Teste" class="footer-link">Projetos</a>
+        </li>
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Fique por Dentro das Inovações no Campo</p>
+
+        <p class="footer-text">
+         Descubra as tendências e novidades que estão transformando o setor agropecuário.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
